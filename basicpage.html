@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Curry | Shrimp</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{margin:0; padding:0; box-sizing: border-box;}
+
+body{line-height: 1.5; font-family: 'Poppins', sans-serif;}
+h1,h2{font-family: "Raleway", sans-serif}
+
+
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.t_center{text-align:center;}
+.bgimg{background-image: url("curry_shrimp.png");}
+ h1{font-size:72px; margin-bottom:0;}
+ h2{font-size:48px; margin:0;}
+ .bgimg2 {background-image: url("pic2.png");}
+ .light_green{color: #2596be(14 51% 40% / 0.889); font-weight: bold; text-shadow: 2px 4px 4px #be4d25;}
+
+
+.logo{ float:left; color: gray; padding:10px; font-size: 40px;}
+.logo span{color: red; font-weight: 700;}
+.logo p{font-size: 20px; margin-top: -20px; text-align: center; color: #be4d25;}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+nav li{ display: inline; float: right; margin: 20px;}
+nav li a{color: #2596be; text-decoration: none; font-size: 20px;}
+nav li a:hover{color: yellow; border-bottom: 3px solid yellow;}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.facts .column{padding: 5% 40px 40px 10%;}
+.statement{text-align:center; font-size: 30px; background-color: #9ACD32;color: #EDF6DD; height: 200px; padding: 40px; }
+
+
+
+
+.instructions ul{list-style: none;}
+.instructions > ul > li{ margin: 20px;}
+.num{ color: red; font-weight: bold; font-size: 50px; margin-right: 20px;}
+
+
+
+/* FOOTER */
+
+.footer{background-color: #24262b; padding: 70px 0;}
+.container{max-width: 1170px; margin:auto;}
+.row{display: flex; flex-wrap: wrap;}
+
+.footer ul{list-style: none;}
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+</style>
+</head>
+<body>
+<!-- Header / Home-->
+<header  class="bgimg">
+<div class="logo"><span>J</span>erome & <span>C</span>heryl<br><p>"recipes to fill your belly"</p></div>
+
+<nav>
+<ul>
+<li><a href="#instructions">Cooking_Instructions</li>
+<li><a href="#ingredients">Ingredients</li>
+<li><a href="#nutrition">Nutrition_Facts</li>
+<li><a href="#time">Cooking_Time</li>
+</ul>
+</nav>
+
+ <div class="display-middle t_center light_green">
+    <h1 class="light_green">Curry Shrimp With Vegetables</h1>
+    <h2 class="light_green"></h2>
+    <h2 class="light_green">by Jerome Scott Updated on 10/11/2022</h2>
+ </div>
+</header>
+
+
+
+
+
+
+<div class="row facts">
+      <div class="column">
+            <h3 id="time">TIME:</h3>
+            <li>Prep: 10 mins</li>
+            <li>Cook: 10 mins</li>
+            <li>Total: 20 mins</li>
+            <li>Servings: 2 to 4 servings</li>  
+      </div>
+      <div class="column">
+            <h3 id="nutrition">NUTRITION:</h3>
+            <li>252
+            Calories</li>
+            <li>14g
+            <li>Fat</li>
+            <li>9g
+            Carbs</li>
+            <li>21g
+            Protein</li>
+      </div>
+</div>
+
+
+<div class="statement">
+<p>
+Curry paste adds flavor to carrot, peas, and red bell pepper in this easy curry shrimp recipe that takes less than 20 minutes to make. 
+This stir-fry pairs perfectly with rice or noodles.
+</p>
+</div>
+
+
+<section style="margin: 20px; margin-right: 50px;">
+    <div class="title ingredients">
+    <h2>Ingredients</h2>
+</div>
+
+    <ul  class="ingredients" id="ingredients">
+    <li><p><span class="data">3/4</span> <span >pound</span> fresh <span class="data">medium shrimp</span></p></li>
+    <li><p><span>1</span> <span>large</span> <span>carrot</span></p></li>
+    <li><p><span data-ingredient-quantity="true">1</span> <span data-ingredient-name="true">red bell pepper</span></p></li>
+    <li class="structured-ingredients__list-item"><p><span data-ingredient-quantity="true">6</span> <span data-ingredient-unit="true">ounces</span> <span data-ingredient-name="true">snow peas</span></p></li>
+    <li><p><span data-ingredient-quantity="true">3 1/2</span> <span data-ingredient-unit="true">tablespoons</span> <span data-ingredient-name="true">oil</span>, or as needed, divided</p></li>
+    <li><p><span data-ingredient-quantity="true">1</span> <span data-ingredient-unit="true">teaspoon</span> minced <span data-ingredient-name="true">ginger</span>, about 2 thin slices</p></li>
+    <li><p><span data-ingredient-quantity="true">1</span> <span data-ingredient-unit="true">tablespoon</span> <span data-ingredient-name="true">curry paste</span></p></li>
+    <li><p><span data-ingredient-quantity="true">1</span> <span data-ingredient-unit="true">tablespoon</span> <span data-ingredient-name="true">Chinese rice wine</span>, or dry sherry</p></li>
+    <li><p><span data-ingredient-quantity="true">1/4</span> <span data-ingredient-unit="true">teaspoon</span> <span data-ingredient-name="true">sugar</span>, or to taste</p></li>
+    </ul>
+</section>
+
+
+
+
+
+<div class="instructions" id="instructions">
+<ul>
+<li>
+<p><span class="num">1</span>Soak the shrimp in warm salted water for 5 minutes. Rinse in cold water, drain and pat dry with paper towels. Shell, devein and chop.</p>
+</li>
+<li>
+<p><span class="num">2</span>Peel and slice the carrot into 1/2-inch slices on the diagonal. Cut the red bell pepper in half, remove the seeds and chop into chunks.</p>
+</li>
+<li>
+<p><span class="num">3</span>Soak the shrimp in warm salted water for 5 minutes. Rinse in cold water, drain and pat dry with paper towels. Shell, devein and chop. </p>
+</li>
+<li>
+<p><span class="num">4</span> Peel and slice the carrot into 1/2-inch slices on the diagonal. Cut the red bell pepper in half, remove the seeds and chop into chunks.</p>
+</li>
+<li>
+<p><span class="num">5</span>In a large pot filled with boiling water, briefly blanch (parboil) the peas and carrots until the peas turn bright green, and the vegetables are crisp but still tender. Remove, plunge briefly into ice cold water, and drain thoroughly. </p>
+</li>
+<li>
+<p><span class="num">6</span>tablespoons oil to the heated wok. Add the ginger and stir-fry briefly until aromatic (about 30 seconds). Add the shrimp. Stir-fry until they turn pink. Remove the shrimp from the pan. </p>
+</li>
+<li>
+<p><span class="num">7</span> Heat 1 1/2 tablespoons oil to the wok. When the oil is hot, add the curry paste. Heat briefly until it is aromatic (30 seconds to 1 minute). Add the carrots. Stir-fry for 1 minute, then add the red bell pepper. Add the peas. Stir-fry</p>
+</li>
+<li>
+<p><span class="num">8</span>briefly, then add the shrimp back into the pan. Mix everything together and cook for 1 minute, then add the rice wine or sherry and the sugar. Cook for a bit longer and serve hot. </p>
+</li>
+</ul>
+</div>
+
+
+
+
+  <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="#">watch</a></li>
+  	 				<li><a href="#">bag</a></li>
+  	 				<li><a href="#">shoes</a></li>
+  	 				<li><a href="#">dress</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+</body>
+</html>
+
